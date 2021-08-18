@@ -6,7 +6,7 @@ A collection of tools for computing position-dependent codon usage bias (PDCUB) 
 Performs a position-based computational survey for each non-stop codon given a FASTA file. 
 
 Required input:
-* gencode gene FASTA
+* GENCODE gene FASTA
 * Path to the result directory (must already exist)
 * bin size in nucleotides, must be a multiple of 3
 * CDS cutoff length in nucleotides (the maximum CDS position to read to)
