@@ -11,7 +11,7 @@ Required input:
 * bin size in nucleotides, must be a multiple of 3
 * CDS cutoff length in nucleotides (the maximum CDS position to read to)
 
-Example: python computeCodonStats.py gene.fa result_dir 60 600
+Example: `python computeCodonStats.py gene.fa result_dir 60 600`
 
 Script output:
 * TSV files where the rows are codons, the columns are the bins, and the values are
@@ -28,14 +28,14 @@ Performs a similar computation as computeCodonStats.py, but computes for two cat
 
 Inputs are the same as computeCodonStats.py, with the omission of a bin size.
 
-Example: python computeCodonStats_GC.py gene.fa result_dir 600
+Example: `python computeCodonStats_GC.py gene.fa result_dir 600`
 
 ### computeCodonStats_AUGC.py
 Performs a similar computation as computeCodonStats.py, but computes for each nucleotide instead of each codon.
 
 Inputs are the same as computeCodonStats.py, with the omission of a bin size.
 
-Example: python computeCodonStats_AUGC.py gene.fa result_dir 600
+Example: `python computeCodonStats_AUGC.py gene.fa result_dir 600`
 
 ### findAUGScores.py
 Finds the highest PDCUB scoring AUG and identifies whether it is the start codon for each transcript in an input FASTA file.
@@ -53,7 +53,7 @@ Required input:
  - enter "augc" if the log likelihood TSV came from computeCodonStats_AUGC.py
  - enter "codon" if the log likelihood TSV came from computeCodonStats_GC.py
 
-example: python findAUGScores.py log_gc.tsv gene.fa realmodel 3 100 gc
+example: `python findAUGScores.py log_gc.tsv gene.fa realmodel 3 100 gc`
 
 Script Output:
 * TSV file with the following columns
@@ -80,11 +80,11 @@ Required input:
  - 1: the codons are organized by chemical group, amino acid, and the first column in increasing order
  - 2: the codons are organized by the difference between the first and second column in increasing order
 
-Example: python createHeatMap.py z-scores.tsv zScoreHeatMap.pdf plasma z-scores 0
+Example: `python createHeatMap.py z-scores.tsv zScoreHeatMap.pdf plasma z-scores 0`
 
 ### createDendrogram.py
 Creates a PDF of a heatmap where the codons are organized according to a dendrogram.
 
 The input is the same as createHeatMap.py, but there is no option for the organization scheme of the heatmap.
 
-Example: python createDendrogram.py z-scores.tsv zScoreDendrogram.py Reds z-scores
+Example: `python createDendrogram.py z-scores.tsv zScoreDendrogram.py Reds z-scores`
