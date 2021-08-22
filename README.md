@@ -88,3 +88,6 @@ Creates a PDF of a heatmap where the codons are organized according to a dendrog
 The input is the same as createHeatMap.py, but there is no option for the organization scheme of the heatmap.
 
 Example: `python createDendrogram.py z-scores.tsv zScoreDendrogram.py Reds z-scores`
+
+### plotTai_quintiles.py
+This python script reads in five evenly sized fasta files, each comprising one quintile of the GENCODE protein-coding human transcriptome sorted by PDCUB score. The output is a combined plot of the average local tAI scores for each quintile. These averages are calculated using a sliding window, the size which is entered from the command line when executing the script.
