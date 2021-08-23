@@ -97,3 +97,6 @@ This script takes three inputs: a list of SignalP prediction results, a list of 
 
 ### plotTaiVsPdcub_final.py
 Python script that takes in a fasta file, a PDCUB score file, and a CDS window size W in nucleotides. The script computes local tAI for the first W nucleotides and the second W nucleotides. There are two outputs: A scatterplot of second-window local tAI against first-window local tAI for each transcript, and a scatterplot of first-plus-second-window local tAI against PDCUB score for each transcript.
+
+### plotCAI_localRA_final.py
+Python script that takes in a fasta file, a PDCUB score file, and a CDS window size W in nucleotides. The script computes local CAI for the first W nucleotides and the second W nucleotides. The output is a scatterplot of second-window local CAI against first-window local CAI for each transcript.
