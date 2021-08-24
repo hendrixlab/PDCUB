@@ -100,3 +100,6 @@ Python script that takes in a fasta file, a PDCUB score file, and a CDS window s
 
 ### plotCAI_localRA_final.py
 Python script that takes in a fasta file, a PDCUB score file, and a CDS window size W in nucleotides. The script computes local CAI for the first W nucleotides and the second W nucleotides. The output is a scatterplot of second-window local CAI against first-window local CAI for each transcript.
+
+### plot_avg_ribosome_profile_quintiles_a_site.py
+Python script that reads in five fasta files (quintiles) and a BAM file of ribo-seq reads both derived from the GENCODE protein-coding human transcriptome. This script plots the normalized ribosome profile of each quintile.
